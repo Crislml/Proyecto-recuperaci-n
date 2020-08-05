@@ -1,4 +1,4 @@
-# Proyecto: Implementación de un sensor de temperatura con pantalla LCD.
+# Proyecto: Implementación de una pantalla LCD.
 ## *INTRODUCCIÓN*
 A lo largo de la carrera de Mecatrónica se han observado diferentes asignaturas que son fundamentales, entre ellas está la programación y los circuitos eléctricos. Existen diferentes formas de relacionar estas dos asignaturas donde se realiza un programa para poder controlar diferentes actuadores y sensores, esto a través del programa Visuino que nos permitirá desarrollar de mejor manera el funcionamiento de una pantalla LCD y a su vez un sensor de temperatura.
 # Objetivo general
