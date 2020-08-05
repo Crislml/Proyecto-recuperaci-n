@@ -1,6 +1,4 @@
 # Proyecto de recuperación
-Programación en arduino para controlar un LCD
-# Práctica 5
 ## *INTRODUCCIÓN*
 A lo largo de la asignatura, se han visto una variedad de métodos para la resolución de circuitos eléctricos, sin embargo es frecuente encontrarnos con circuitos realmente complejos, los cuales suelen ser muy complicados resolver con las técnicas aprendidas anteriormente, es por esta razón que surge la necesidad de comprender el teorema de Thévenin, que resume un circuito, cualquiera que sea, en un circuito básico con un resistencia y un voltaje. Antes de hacer uso de este método será necesario validar este teorema a través de la práctica mediante su respectiva comprobación experimental.
 ## *OBJETIVOS:*
@@ -12,7 +10,7 @@ A lo largo de la asignatura, se han visto una variedad de métodos para la resol
 - Analizar los resultados teóricos con los prácticos mediante la comparación de los mismos para la obtención de porcentajes de error respectivos.
 
 
-## *LISTA DE MATERIALES:*
+## *LISTA DE COMPONENTES:*
 
 
 | Cantidad | Material de Equipo |
