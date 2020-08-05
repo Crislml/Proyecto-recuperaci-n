@@ -67,16 +67,16 @@ Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demá
 
 Figura 3. Diagrama del circuito en visuino
 
-![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Funcionamiento%20pantalla%20LCD.png)
-
-Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura. Adaptado de http://arduparatodos.blogspot.com/2016/11/usando-pantalla-lcd-16x2-con-arduino.html.
-
 
 ## *EXPLICACIÓN DEL CIRCUITO*
 
 Los pines de la pantalla LCD funcionan de la siguiente manera:
 
 Tenemos conectado el pin VSS que va a negativo, el VDD es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordener enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bist y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
+
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Funcionamiento%20pantalla%20LCD.png)
+
+Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura. Adaptado de http://arduparatodos.blogspot.com/2016/11/usando-pantalla-lcd-16x2-con-arduino.html.
 
 ## *RESULTADOS DE APRENDIZAJE*
 
@@ -100,17 +100,15 @@ Gracias al desarrollo de este circuito con una pantalla LCD se conoció mejor el
 
 - Realizar una previa revisión en los componentes que se han añadido en Visuino, ya que un error puede interferir y posterior a esto que no se vea nada proyectado en la pantalla.
 
-## *CRONOGRAMA*
-
-![alt text](https://github.com/Kevi7k/Practica5/blob/master/Im%C3%A1genes/Cronograma.jpeg)
 
 ## *BIBLIOGRAFÍA*
 
-Charles K. Alexander, Matthew N. O. Sadiku, Fundamentos de circuitos eléctricos. Tercera edición. México: McGrawHill, 2004.
 
 Visuino. Disponible en línea en: https://www.visuino.com/ 
 
 Arduino para todos. Disponible en línea en: http://arduparatodos.blogspot.com/2016/11/usando-pantalla-lcd-16x2-con-arduino.html
+
+Hardware libre. Diponible en línea en: https://www.hwlibre.com/visuino-una-herramienta-de-programacion-para-los-creadores-de-hardware/
 
 ## *ANEXOS*
 
