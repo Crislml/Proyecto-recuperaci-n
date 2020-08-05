@@ -1,14 +1,12 @@
 # Proyecto de recuperación
 ## *INTRODUCCIÓN*
-A lo largo de la asignatura, se han visto una variedad de métodos para la resolución de circuitos eléctricos, sin embargo es frecuente encontrarnos con circuitos realmente complejos, los cuales suelen ser muy complicados resolver con las técnicas aprendidas anteriormente, es por esta razón que surge la necesidad de comprender el teorema de Thévenin, que resume un circuito, cualquiera que sea, en un circuito básico con un resistencia y un voltaje. Antes de hacer uso de este método será necesario validar este teorema a través de la práctica mediante su respectiva comprobación experimental.
-## *OBJETIVOS:*
+A lo largo de la carrera de Mecatrónica se han observado diferentes asignaturas que son fundamentales, entre ellas está la programación y los circuitos eléctricos. Existen diferentes formas de relacionar estas dos asignaturas donde se realiza un programa para poder controlar diferentes actuadores y sensores, esto a través del programa Visuino que nos permitirá desarrollar de mejor manera el funcionamiento de una pantalla LCD y a su vez un sensor de temperatura.
 # Objetivo general
-- Diseñar un circuito electrico mediante la simulación en laboratorios virtuales para comprobar la validez del teorema de Thévenin
-
+- Diseñar un circuito electrónico que permita visualizar el funcionamiento de una pantalla LCD con ayuda de una placa de Arduino y el software Visuino para relacionar conocimientos de programación y de circuitos.
 # Objetivos específico
-
-
-
+- Comprender el funcionamiento de Visuino para facilitar la parte de programación en el desarrollo del proyecto.
+- Realizar un control adecuado de una pantalla LCD y sensor de temperatura.
+- Ampliar conocimientos sobre el control de la placa Arduino.
 ## *LISTA DE COMPONENTES:*
 
 
@@ -22,15 +20,46 @@ A lo largo de la asignatura, se han visto una variedad de métodos para la resol
 
 ## *MARCO TEÓRICO*
 
+Una de las principales herramientas que permiten la relación sinérgica entre hardware y software es Arduino, que es una paltaforma de creación electrónica de código abierto que consiste en una placa que dispone de elementos necesarios para conectar entradas y salidas de un microcontrolador.¿Qué es un microcontrolador? un microcontrolador es un circuito integrado en el cual se puede almacenar un código de programación con las instrucciones que hacen interactuar a la placa de una manera creativa.
+
+La interfaz de salida de arduino permite procesar la información que ha llegado al Arduino para que esta se reproduzca en un otra placa que en este caso, será una pantalla LCD. 
+
+En el proyecto también será usado el software Visuino, que es un programa el cual nos facilita el ámbito de programación en el Arduino ya que únicamente lo que tendremos que hacer es realizar correctamente las conexiones, ya que todo está basado en una serie de diagramas y pines que una vez terminado, nos permite obtener el código de programación. es decir el programa nos ahorra toda la parte de programación para posterior a esto grabarlo en el Arduino.
+
 ![alt text](
 https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Visuino.jpg)
 
 Figura 1. Visuino
 
+A continuación serán descritos algunos componentes que se usarán en el circuito.
+
+- Pantalla LCD:
+O por sus siglas en inglés "Liquid Cristal Display", es una pantalla que usa una  sustancia líquida que está atrapada en dos placas, de manera que la corriente que para por una zona específica permite que esta se vuelva opaca y que se pueda visualizar diferentes tipos de caracteres a través del control de los pixeles.
+
+- Sensor de temperatura: 
+
+Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demás para que sea usado, que necesita únicamente de 5 voltios para funcionar, es capaz de medir la temperatura en un rango de -55°C y 150°C. Este sensor convierte el voltaje que se le proporciona en temperatura a razón de 10mV por cada grado centígrado. Por ejemplo si medimos 20mV en la salida, lo que en realidad se medirá son 2°C.
 
 
 ## *PROCEDIMIENTO*
 
+1. Abrimos el programa Visuino y elegimos la placa de Arduino con la que se trabajará.
+
+2. Seleccionamos el display LCD y lo arrastramos al campo de trabajo, luego damos doble click para agregar dos elementos.
+
+3. Ahora modificamos los parámetros iniciales en el panel de propiedades, para que se pueda visualizar el texto en la pantalla LCD, es necesario tomar en consideración el tamaño del mensaje.
+
+4. Se agrega un nuevo elementos para que por medio de desplegar la lectura del pin analógico nos de el valor del sensor de temperatura.
+
+5. Verificamos que los valores de cada elemento sean los correctos.
+
+6. Realizamos la conexión de los pines que se utilizarán en el display que se conectarán directamente a los pines de la placa arduino.
+
+7.Usamos una función llamada snapshot para hacer la lectura analógica y conectamos directamente con el pin analógico donde se tomará el valor de la temperatura.
+
+8. Para que se active la función snapshot agregamos la función generadora de pulsos y la configuramos en un intervalo de 3 y lo conectamos.
+
+9. Envíamos el programa a Arduino para exportar el código.
 
 ## *DIAGRAMA*
 
@@ -40,29 +69,34 @@ Figura 3. Diagrama del circuito en visuino
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Funcionamiento%20pantalla%20LCD.png)
 
-Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura.
+Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura. Adaptado de http://arduparatodos.blogspot.com/2016/11/usando-pantalla-lcd-16x2-con-arduino.html.
 
 
 ## *EXPLICACIÓN DEL CIRCUITO*
-
-Para nuestra práctica, tenemos un circuito el cual está conformado por dos fuentes de voltaje, y 5 resistencias. Los valores de las fuentes de voltaje son de 12 V y de 2V, las resistencias son de 560, 4700, 330, 100 y 1000 ohmios, esta última será tomada como nuestra resistencia que la vamos a excluir para sacar nuestra resistencia y nuestro voltaje Thevenin. La corriente desde nuestra fuente de voltaje de 12 V, hasta nuestra resistencia de 560 ohmios. De esta resistencia saldrá una resistencia de 4700 ohmios, la cual se conectara su otro extremo con el polo negativo de la primera fuente, Y también de la resistencia de 560 ohmios, estará conectado con el polo negativo de la segunda fuente de voltaje que es de 2 V. Des nuestra segunda fuente de voltaje, saldrán dos resistencias, la primera que será de 330 ohmios y que se conectara con el polo negativo de nuestra primera fuente de voltaje, y la segunda resistencia que es de 100 ohmios, que estará conectada en serie con nuestra resistencia de 1000 ohmios, la cual terminara en el polo negativo de nuestra primera fuente de voltaje.
-
-Para realizar nuestros voltajes en Thevenin vamos a realizar lo siguiente. Para nuestra resistencia en Thevenin, excluimos la resistencia de 1000 ohmios, dejando el sistema abierto en ese punto, y convirtiendo las fuentes de voltaje en cortocircuitos. Sacamos una resistencia equivalente y esta será nuestra resistencia Thevenin. Para nuestro voltaje Thevenin conectaremos las fuentes de voltaje, y conservaremos nuestra resistencia de 1000 ohmios abierto, realizamos el análisis como tenemos en anexos, y ya tendremos nuestro voltaje en thevenin.
 
 
 
 ## *RESULTADOS DE APRENDIZAJE*
 
-
+Gracias al desarrollo de este circuito con una pantalla LCD se conoció mejor el funcionamiento de este componente, también se han mejorado habilidades en el desarrollo de un circuito mediante Visuino, que son el tipo de programas que ayudan a los desarrolladores de hardware que no tienen  mucho conocimiento en lo que corresponde al desarrollo de software, además de que nos ahorra el esfuerzo de crear un código, traduciendo todo a una serie de pines y diagramas.
 
 
 ## *CONCLUSIONES*
-
+ 
+ - Se ha logrado proyectar la temperatura ambiente mediante el control de una pantalla LCD , todo esto con la ayuda de la plataforma VISUINO, que nos ha ahorrado la parte de programación dentro de la plataforma Arduino.
+ 
+ - El proyecto que se realizó nos ayudó a comprender de mejor manera como funciona una pantalla LCD, al igual que el software Visuino, donde se manejó un entorno de programación netamente visual.
+ 
+ - Se han encontrado las ventajas de usar la herramienta Visuino en las placas Arduino, esta plataforma en realidad incorpora muchas cosas positivas que ha permitido ir más rápido en la creación del programa.
 
 
 ## *RECOMENDACIONES*
 
+- Es necesario tener conocimientos precios sobre circuitos elécricos para llevar a cabo un buen funcionamiento en el proyecto.
 
+- Tener en cuenta la funcionalidad de cada pin de la pantalla, para poder faciliar el control del mismo.
+
+- Realizar una previa revisión en los componentes que se han añadido en Visuino, ya que un error puede interferir y posterior a esto que no se vea nada proyectado en la pantalla.
 
 ## *CRONOGRAMA*
 
@@ -71,8 +105,10 @@ Para realizar nuestros voltajes en Thevenin vamos a realizar lo siguiente. Para 
 ## *BIBLIOGRAFÍA*
 
 Charles K. Alexander, Matthew N. O. Sadiku, Fundamentos de circuitos eléctricos. Tercera edición. México: McGrawHill, 2004.
-https://www.visuino.com/ 
-http://arduparatodos.blogspot.com/2016/11/usando-pantalla-lcd-16x2-con-arduino.html
+
+Visuino. Disponible en línea en: https://www.visuino.com/ 
+
+Arduino para todos. Disponible en línea en: http://arduparatodos.blogspot.com/2016/11/usando-pantalla-lcd-16x2-con-arduino.html
 
 ## *ANEXOS*
 
