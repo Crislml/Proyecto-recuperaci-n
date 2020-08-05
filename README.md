@@ -55,7 +55,7 @@ Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demá
 
 6. Realizamos la conexión de los pines que se utilizarán en el display que se conectarán directamente a los pines de la placa arduino.
 
-7.Usamos una función llamada snapshot para hacer la lectura analógica y conectamos directamente con el pin analógico donde se tomará el valor de la temperatura.
+7. Usamos una función llamada snapshot para hacer la lectura analógica y conectamos directamente con el pin analógico donde se tomará el valor de la temperatura.
 
 8. Para que se active la función snapshot agregamos la función generadora de pulsos y la configuramos en un intervalo de 3 y lo conectamos.
 
@@ -74,7 +74,9 @@ Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura. Adaptado de 
 
 ## *EXPLICACIÓN DEL CIRCUITO*
 
+Los pines de la pantalla LCD funcionan de la siguiente manera:
 
+Tenemos conectado el pin VSS que va a negativo, el VDD es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordener enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bist y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
 
 ## *RESULTADOS DE APRENDIZAJE*
 
