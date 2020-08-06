@@ -20,7 +20,7 @@ A lo largo de la carrera de Mecatrónica se han observado diferentes asignaturas
 
 ## *MARCO TEÓRICO*
 
-Una de las principales herramientas que permiten la relación sinérgica entre hardware y software es Arduino, que es una paltaforma de creación electrónica de código abierto que consiste en una placa que dispone de elementos necesarios para conectar entradas y salidas de un microcontrolador.¿Qué es un microcontrolador? un microcontrolador es un circuito integrado en el cual se puede almacenar un código de programación con las instrucciones que hacen interactuar a la placa de una manera creativa.
+Una de las principales herramientas que permiten la relación sinérgica entre hardware y software es Arduino, que es una plataforma de creación electrónica de código abierto que consiste en una placa que dispone de elementos necesarios para conectar entradas y salidas de un microcontrolador.¿Qué es un microcontrolador? un microcontrolador es un circuito integrado en el cual se puede almacenar un código de programación con las instrucciones que hacen interactuar a la placa de una manera creativa.
 
 La interfaz de salida de arduino permite procesar la información que ha llegado al Arduino para que esta se reproduzca en un otra placa que en este caso, será una pantalla LCD. 
 
