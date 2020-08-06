@@ -16,7 +16,7 @@ A lo largo de la carrera de Mecatrónica se han observado diferentes asignaturas
 | 1  | Sensor de temperatura |
 |  1 | Potenciómetro  |
 |  1 | Pantalla LCD  |
-|  9 | Cables macho y hembra  |
+|  - | Cables macho y hembra  |
 
 ## *MARCO TEÓRICO*
 
