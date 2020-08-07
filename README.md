@@ -34,9 +34,12 @@ Este programa tiene diferentes partes importantes que serán descritas a continu
 
 - Panel de navegación y barra de herramientas.
 
+En esta parte podemos encontrar una variedad de herramientas útiles que nos facilitarán la interacción con la plataforma, además hay un panel de navegación en el cual podemos desplazarnos con facilidad alrededor de todo el programa.
+
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/1.jpeg)
 
 - Panel de propiedades
+Este apartado nos permite cambiar cada propiedad de cada componente, modificar valores iniciales y configurar cada opción de cada elemento que agreguemos en nuestro circuito.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/2.jpeg)
 
@@ -44,19 +47,28 @@ Este programa tiene diferentes partes importantes que serán descritas a continu
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/3.jpeg)
 
-- Panel virtual y graficador de alcance
+Aquí tenemos varias opciones entre las cuales está el soporte de ayuda, también se puede observar que existe una vista de panel virtual, al igual que un graficador de alcance. Por último se tiene lo que corresponde a las librerías y las diferentes plataformas que están cargadas en el software para ser usadas.
+
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/4.jpeg)
 
-- Plataformas y librerías
+Fig. Panel virtual y graficador de alcance.
+
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/5.jpeg)
+Fig. Plataformas y librerías.
 
 - Componentes
+
+Podemos observar los diferentes componentes que podemos usar en visuino, entre los cuales están sensores, actuadores, controles remoto, display, etc.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/6.jpeg)
 
 - Campo de trabajo y diferentes soportes de Arduino.
+
+Ésta es la parte principal en la cual se desarrollará todo el programa, unicamente para añadir componente lo que tendremos que hacer es arrastrar a estar parte cualquier componente y se nos desplegará en forma de diagrama y lo único que tendremos que hacer es configurar los componentes y conectar los pines.
+
+También se tiene diferentes soportes para placas Arduino, de esta forma podemos elegir según el microcontrolador que poseamos.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/6.jpeg)
 
@@ -68,7 +80,8 @@ O por sus siglas en inglés "Liquid Cristal Display", es una pantalla que usa un
 - Sensor de temperatura: 
 Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demás para que sea usado, que necesita únicamente de 5 voltios para funcionar, es capaz de medir la temperatura en un rango de -55°C y 150°C. Este sensor convierte el voltaje que se le proporciona en temperatura a razón de 10mV por cada grado centígrado. Por ejemplo si medimos 20mV en la salida, lo que en realidad se medirá son 2°C.
 
-
+- Potenciómetro: 
+Es un componente que tiene resistencia variable, es decir nosotros podemos modificar el valor de la resistencia. En el caso de nuestro circuito, servirá para regular el contraste de la pantalla LCD.
 ## *PROCEDIMIENTO*
 
 1. Abrimos el programa Visuino y elegimos la placa de Arduino con la que se trabajará.
@@ -88,6 +101,8 @@ Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demá
 8. Para que se active la función snapshot agregamos la función generadora de pulsos y la configuramos en un intervalo de 3 y lo conectamos.
 
 9. Envíamos el programa a Arduino para exportar el código.
+
+10. Armamos el circuito y cargamos el código en la placa arduino.
 
 ## *DIAGRAMA*
 
