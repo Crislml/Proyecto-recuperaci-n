@@ -71,11 +71,11 @@ Figura 3. Diagrama del circuito en visuino
 
 Los pines de la pantalla LCD funcionan de la siguiente manera:
 
-Tenemos conectado el pin VSS que va a negativo, el VDD es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordener enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bist y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
+Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bist y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Diagrama%20de%20circuito.png)
 
-Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura.
+Figura 4. Funcionamiento de pantalla LCD con sensor de temperatura. Simulado en TinkerCAD.
 
 ## *RESULTADOS DE APRENDIZAJE*
 
