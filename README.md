@@ -111,12 +111,14 @@ Es un componente que tiene resistencia variable, es decir nosotros podemos modif
 
 Figura 3. Diagrama del circuito en visuino
 
+Como se observa lo primero que tenemos es nuestra placa de Arduino UNO, luego de esto se agrega el componente de la pantalla LCD y agregamos 3 componentes. Seguido de esto se cambia el valor inicial a cada componente: el primer componente incluirá el texto que corresponde a la primera línea con los caracteres "BUEN DIA!"; el segundo componente correspode a la palabra que se imprimirá en la segunda línea que será "TEMP:"; el último componente corresponde al valor que se imprimirá del sensor de temperatura donde seleccionaremos la columna en la cual se imprimirá la temperatura.
+
 
 ## *EXPLICACIÓN DEL CIRCUITO*
 
 Los pines de la pantalla LCD funcionan de la siguiente manera:
 
-Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bist y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
+Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bits y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Diagrama%20de%20circuito.png)
 
