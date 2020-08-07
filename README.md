@@ -82,6 +82,7 @@ Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demá
 
 - Potenciómetro: 
 Es un componente que tiene resistencia variable, es decir nosotros podemos modificar el valor de la resistencia. En el caso de nuestro circuito, servirá para regular el contraste de la pantalla LCD.
+
 ## *PROCEDIMIENTO*
 
 1. Abrimos el programa Visuino y elegimos la placa de Arduino con la que se trabajará.
