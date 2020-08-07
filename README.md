@@ -70,7 +70,7 @@ Podemos observar los diferentes componentes que podemos usar en visuino, entre l
 
 También se tiene diferentes soportes para placas Arduino, de esta forma podemos elegir según el microcontrolador que poseamos.
 
-![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/6.jpeg)
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/7.jpeg)
 
 A continuación serán descritos algunos componentes que se usarán en el circuito.
 
