@@ -24,12 +24,35 @@ Una de las principales herramientas que permiten la relación sinérgica entre h
 
 La interfaz de salida de arduino permite procesar la información que ha llegado al Arduino para que esta se reproduzca en un otra placa que en este caso, será una pantalla LCD. 
 
-En el proyecto también será usado el software Visuino, que es un programa el cual nos facilita el ámbito de programación en el Arduino ya que únicamente lo que tendremos que hacer es realizar correctamente las conexiones, ya que todo está basado en una serie de diagramas y pines que una vez terminado, nos permite obtener el código de programación. es decir el programa nos ahorra toda la parte de programación para posterior a esto grabarlo en el Arduino.
+En el proyecto también será usado el software *Visuino*, que es un programa el cual nos facilita el ámbito de programación en el Arduino ya que únicamente lo que tendremos que hacer es realizar correctamente las conexiones, ya que todo está basado en una serie de diagramas y pines que una vez terminado, nos permite obtener el código de programación. es decir el programa nos ahorra toda la parte de programación para posterior a esto grabarlo en el Arduino.
 
 ![alt text](
 https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Visuino.jpg)
 
 Figura 1. Visuino
+
+Este programa tiene diferentes partes importantes que serán descritas a continuación.
+
+- Panel de navegación y barra de herramientas.
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/1.jpeg)
+
+- Panel de propiedades
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/2.jpeg)
+
+- Panel principal
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/3.jpeg)
+
+- Panel virtual y graficador de alcance
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/4.jpeg)
+
+- Plataformas y librerías
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/5.jpeg)
+
+- Componentes
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/6.jpeg)
+
+- Campo de trabajo y diferentes soportes de Arduino.
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/6.jpeg)
 
 A continuación serán descritos algunos componentes que se usarán en el circuito.
 
