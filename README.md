@@ -121,7 +121,7 @@ Como se observa lo primero que tenemos es nuestra placa de Arduino UNO, luego de
 
 Los pines de la pantalla LCD funcionan de la siguiente manera:
 
-Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin Enable, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bits y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
+Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma, conectamos el pin VO al potenciómetro para poder controlar el contraste e intensidad de los caracteres. El pin RS se encargará de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin Enable, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bits y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Diagrama%20de%20circuito.png)
 
