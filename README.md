@@ -24,7 +24,7 @@ Una de las principales herramientas que permiten la relación sinérgica entre h
 
 La interfaz de salida de arduino permite procesar la información que ha llegado al Arduino para que esta se reproduzca en un otra placa que en este caso, será una pantalla LCD. 
 
-En el proyecto también será usado el software *Visuino*, que es un programa el cual nos facilita el ámbito de programación en el Arduino ya que únicamente lo que tendremos que hacer es realizar correctamente las conexiones, ya que todo está basado en una serie de diagramas y pines que una vez terminado, nos permite obtener el código de programación. es decir el programa nos ahorra toda la parte de programación para posterior a esto grabarlo en el Arduino.
+En el proyecto también será usado el software *Visuino*, que es un programa el cual nos facilita el ámbito de programación en el Arduino ya que únicamente lo que tendremos que hacer es realizar correctamente las conexiones, ya que todo está basado en una serie de diagramas y pines que una vez terminado, nos permite obtener el código de programación. es decir el programa nos ahorra toda la parte de programación para posterior a esto grabarlo en el Arduino. Cabe recalcar que el código que se obtiene de esta plataforma está en lenguaje C. Al programa lo podemos descargar gratuitamente desde la siguiente página https://www.visuino.com/download, buscamos la versión a descargar y una vez realizado este paso procedemos a instalar el programa.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Visuino.jpg)
 
@@ -77,6 +77,8 @@ A continuación serán descritos algunos componentes que se usarán en el circui
 - Pantalla LCD:
 O por sus siglas en inglés "Liquid Cristal Display", es una pantalla que usa una  sustancia líquida que está atrapada en dos placas, de manera que la corriente que para por una zona específica permite que esta se vuelva opaca y que se pueda visualizar diferentes tipos de caracteres a través del control de los pixeles.
 
+En el proyecto presentado se usará una pantalla LCD 2x16, es decir tiene dos líneas, y es capaz de imprimir 16 caracteres por cada línea.
+
 - Sensor de temperatura: 
 Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demás para que sea usado, que necesita únicamente de 5 voltios para funcionar, es capaz de medir la temperatura en un rango de -55°C y 150°C. Este sensor convierte el voltaje que se le proporciona en temperatura a razón de 10mV por cada grado centígrado. Por ejemplo si medimos 20mV en la salida, lo que en realidad se medirá son 2°C.
 
@@ -101,9 +103,9 @@ Es un componente que tiene resistencia variable, es decir nosotros podemos modif
 
 8. Para que se active la función snapshot agregamos la función generadora de pulsos y la configuramos en un intervalo de 3 y lo conectamos.
 
-9. Envíamos el programa a Arduino para exportar el código.
+9. Envíamos el programa a Arduino para exportar el código. 
 
-10. Armamos el circuito y cargamos el código en la placa arduino.
+10. Armamos el circuito y cargamos el código en la placa arduino. (En mi caso modificaré el código debido a que el simulador que usaré trabaja con lenguaje C++)
 
 ## *DIAGRAMA*
 
@@ -111,14 +113,14 @@ Es un componente que tiene resistencia variable, es decir nosotros podemos modif
 
 Figura 3. Diagrama del circuito en visuino
 
-Como se observa lo primero que tenemos es nuestra placa de Arduino UNO, luego de esto se agrega el componente de la pantalla LCD y agregamos 3 componentes. Seguido de esto se cambia el valor inicial a cada componente: el primer componente incluirá el texto que corresponde a la primera línea con los caracteres "BUEN DIA!"; el segundo componente correspode a la palabra que se imprimirá en la segunda línea que será "TEMP:"; el último componente corresponde al valor que se imprimirá del sensor de temperatura donde seleccionaremos la columna en la cual se imprimirá la temperatura.
+Como se observa lo primero que tenemos es nuestra placa de Arduino UNO, luego de esto se agrega el componente de la pantalla LCD y agregamos 3 componentes. Seguido de esto se cambia el valor inicial a cada componente: el primer componente incluirá el texto que corresponde a la primera línea con los caracteres "BUEN DIA!"; el segundo componente correspode a la palabra que se imprimirá en la segunda línea que será "TEMP:"; el último componente corresponde al valor que se imprimirá del sensor de temperatura donde seleccionaremos la columna en la cual se imprimirá la temperatura. Luego se usa la lectura analógica del sensor de temperatura con la función de toma de muestra SNAPSHOT que desplegará la información en el segundo renglón y se lo conecta directamente con el pin analógico. Pero para activar la función SNAPSHOT, también se agrega una función generadora de pulsos. Una vez hecho esto se procede a conectar los pines necesarios para que funcione la pantalla LCD, entre ellos los pines digitales, de alimentación y control del display. Una vez hecho esto tenemos que exportar el programa para que se cree el código para cargar en el Arduino, código que está en lenguaje C.
 
 
 ## *EXPLICACIÓN DEL CIRCUITO*
 
 Los pines de la pantalla LCD funcionan de la siguiente manera:
 
-Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin E, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bits y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
+Tenemos conectado el pin GND que va a negativo, el VCC es el que se encarga de suministrar voltaje a la pantalla, se conecta su repectiva resistencia para prevenir que se queme la misma. El pin RS se encarga de controlar las ordenes enviadas a la pantalla , mientras que RW realiza la escritura en la pantalla y está conectado a tierra, luego tenemos al pin Enable, que permite que la pantalla reciba inofrmación que será escrita posteriormente. Se usan los pines D4 a D7 para escribir el mensaje, que son los suficientes para la pantalla de 8 bits y por último tenemos los pines A y K, donde A es conectado a la fuente de voltaje Y K está conectado a tierra.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Diagrama%20de%20circuito.png)
 
