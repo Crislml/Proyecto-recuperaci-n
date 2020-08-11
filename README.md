@@ -16,6 +16,7 @@ A lo largo de la carrera de Mecatrónica se han observado diferentes asignaturas
 | 1  | Sensor de temperatura |
 |  1 | Potenciómetro  |
 |  1 | Pantalla LCD  |
+|  1 | Resistencia de 1 kΩ  |
 |  - | Cables macho y hembra  |
 
 ## *MARCO TEÓRICO*
