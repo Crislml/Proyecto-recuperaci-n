@@ -1,0 +1,331 @@
+{
+  "Config": {
+    "Build": {
+      "Board": "arduino:avr:uno"
+    }
+  },
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Content": "OpenWire Diagram",
+  "Units": [
+    {
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 800,
+          "Name": "Arduino",
+          "Instance": {
+            "Serial": {
+              "*": [
+                {
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessor328Module"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data0",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin3"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data1",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin4"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data2",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin5"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data3",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin6"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.RegisterSelect",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin0"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Enable",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin2"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.AnalogSnapshot1.InputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Uno"
+          },
+          "Type": "Component",
+          "Y": 304
+        },
+        {
+          "X": 496,
+          "Name": "LiquidCrystalDisplay1",
+          "Instance": {
+            "Elements": {
+              "*": [
+                {
+                  "InitialValue": "Buen d\u00EDa!",
+                  "Name": "TextField1",
+                  "+": "TArduinoLiquidCrystalElementTextField"
+                },
+                {
+                  "Row": 1,
+                  "Name": "TextField2",
+                  "+": "TArduinoLiquidCrystalElementTextField",
+                  "InitialValue": "Temperatura:"
+                },
+                {
+                  "ClockInputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.AnalogSnapshot1.OutputPin"
+                      }
+                    ]
+                  },
+                  "Row": 1,
+                  "Name": "TextField3",
+                  "+": "TArduinoLiquidCrystalElementTextField",
+                  "Column": 7
+                }
+              ]
+            },
+            "OutputPins": {
+              "Pins": [
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 8 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item8.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 9 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item9.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 4 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item4.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 5 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item5.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 6 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item6.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 7 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item7.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource"
+                }
+              ],
+              "Count": 11,
+              "Form": "__OpenWireRootUnit__"
+            },
+            "+": "TArduinoLiquidCrystalDisplay"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 256,
+          "Name": "AnalogSnapshot1",
+          "Instance": {
+            "SnapshotInputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.PulseGenerator1.OutputPin"
+                }
+              ]
+            },
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField3.ClockInputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item2.ClockInputPin"
+                }
+              ]
+            },
+            "+": "TArduinoAnalogSnapshot",
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 14 ]\/AnalogIn[ 0 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item14.OutputPin"
+              }
+            }
+          },
+          "Type": "Component",
+          "Y": 336
+        },
+        {
+          "X": 256,
+          "Name": "PulseGenerator1",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.AnalogSnapshot1.SnapshotInputPin"
+                }
+              ]
+            },
+            "+": "TArduinoPulseGenerator"
+          },
+          "Type": "Component",
+          "Y": 448
+        }
+      ],
+      "Type": "Diagram",
+      "Selection": [
+        "LiquidCrystalDisplay1"
+      ]
+    }
+  ]
+}
