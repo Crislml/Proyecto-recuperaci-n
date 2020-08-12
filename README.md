@@ -61,7 +61,21 @@ Fig. Plataformas y librerías.
 
 - Componentes
 
-Podemos observar los diferentes componentes que podemos usar en visuino, entre los cuales están sensores, actuadores, controles remoto, display, etc.
+Podemos observar los diferentes componentes que podemos usar en visuino, entre los cuales están sensores, actuadores, controles remoto, display, etc. Los mas generales que se puede apreciar en la iamgen son:
+- Matemática
+- Medición
+- Memorias
+- Motores
+- Entradas y salidas analógicas
+- Integrados
+- Fuentes de corriente y voltaje
+- Sincronizador
+- Texto
+- Controles remotos
+- Convertidores
+- Display
+- Código binario
+- Componentes
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/6.jpeg)
 
@@ -78,7 +92,18 @@ A continuación serán descritos algunos componentes que se usarán en el circui
 - Pantalla LCD:
 O por sus siglas en inglés "Liquid Cristal Display", es una pantalla que usa una  sustancia líquida que está atrapada en dos placas, de manera que la corriente que para por una zona específica permite que esta se vuelva opaca y que se pueda visualizar diferentes tipos de caracteres a través del control de los pixeles.
 
-En el proyecto presentado se usará una pantalla LCD 2x16, es decir tiene dos líneas, y es capaz de imprimir 16 caracteres por cada línea.
+
+En el proyecto presentado se usará una pantalla LCD 2x16, es decir tiene dos líneas, y es capaz de imprimir 16 caracteres por cada línea. Es posible agregar diferentes elementos a la pantalla LCD para configurarla correctamente.
+
+![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Componentes%20del%20circuito.png)
+
+Figura 5. Componentes del circuito.
+
+Pra configurar la pantalla LCD tenemos que cambiar 3 campos importantes.
+-Initial Value: Son los caracteres que se asigna y se desea que sean impresos en la pantalla LCD. Podemos asignar únicamente un tamaño de 16 caracteres, ya que es el tamaño de nuestra pantalla LCD. 
+-Row: Aquí se puede tomar el valor de 0 o 1 ya que nuestra pantalla solamente tiene dos filas y el contador empieza desde 0.
+-Column: Es el número de columna donde queremos que sea impreso nuestro caracter y puede tomar los valores según el tamaño de la pantala.
+
 
 - Sensor de temperatura: 
 Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demás para que sea usado, que necesita únicamente de 5 voltios para funcionar, es capaz de medir la temperatura en un rango de -55°C y 150°C. Este sensor convierte el voltaje que se le proporciona en temperatura a razón de 10mV por cada grado centígrado. Por ejemplo si medimos 20mV en la salida, lo que en realidad se medirá son 2°C.
@@ -161,9 +186,6 @@ Hardware libre. Diponible en línea en: https://www.hwlibre.com/visuino-una-herr
 
 ## *ANEXOS*
 
-![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Componentes%20del%20circuito.png)
-
-Figura 5. Componentes del circuito.
 
 ![alt text](https://github.com/Crislml/Proyecto-recuperaci-n/blob/master/Img/Programa%20compilado.png)
 
