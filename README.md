@@ -101,12 +101,13 @@ Figura 5. Componentes del circuito.
 
 Para configurar la pantalla LCD tenemos que cambiar 3 campos importantes.
 
--Initial Value: Son los caracteres que se asigna y se desea que sean impresos en la pantalla LCD. Podemos asignar únicamente un tamaño de 16 caracteres, ya que es el tamaño de nuestra pantalla LCD. 
+- Initial Value: Son los caracteres que se asigna y se desea que sean impresos en la pantalla LCD. Podemos asignar únicamente un tamaño de 16 caracteres, ya que es el tamaño de nuestra pantalla LCD. 
 
--Row: Aquí se puede tomar el valor de 0 o 1 ya que nuestra pantalla solamente tiene dos filas y el contador empieza desde 0.
+- Row: Aquí se puede tomar el valor de 0 o 1 ya que nuestra pantalla solamente tiene dos filas y el contador empieza desde 0.
 
--Column: Es el número de columna donde queremos que sea impreso nuestro caracter y puede tomar los valores según el tamaño de la pantala.
+- Column: Es el número de columna donde queremos que sea impreso nuestro caracter y puede tomar los valores según el tamaño de la pantala.
 
+Otros componentes usados en el circuito, que funcionarán conjuntamente en el arduino con nuestro circuito tenemos:
 
 - Sensor de temperatura: 
 Es un sensor, como lo dice su nombre, el cual no necesita ningún circuito demás para que sea usado, que necesita únicamente de 5 voltios para funcionar, es capaz de medir la temperatura en un rango de -55°C y 150°C. Este sensor convierte el voltaje que se le proporciona en temperatura a razón de 10mV por cada grado centígrado. Por ejemplo si medimos 20mV en la salida, lo que en realidad se medirá son 2°C.
