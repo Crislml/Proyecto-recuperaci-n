@@ -61,7 +61,7 @@ Fig. Plataformas y librerías.
 
 - Componentes
 
-Podemos observar los diferentes componentes que podemos usar en visuino, entre los cuales están sensores, actuadores, controles remoto, display, etc. Los mas generales que se puede apreciar en la iamgen son:
+Podemos observar los diferentes componentes que podemos usar en visuino, entre los cuales están sensores, actuadores, controles remoto, display, etc. Los mas generales que se puede apreciar en la imagen son:
 - Matemática
 - Medición
 - Memorias
