@@ -99,9 +99,12 @@ En el proyecto presentado se usará una pantalla LCD 2x16, es decir tiene dos l�
 
 Figura 5. Componentes del circuito.
 
-Pra configurar la pantalla LCD tenemos que cambiar 3 campos importantes.
+Para configurar la pantalla LCD tenemos que cambiar 3 campos importantes.
+
 -Initial Value: Son los caracteres que se asigna y se desea que sean impresos en la pantalla LCD. Podemos asignar únicamente un tamaño de 16 caracteres, ya que es el tamaño de nuestra pantalla LCD. 
+
 -Row: Aquí se puede tomar el valor de 0 o 1 ya que nuestra pantalla solamente tiene dos filas y el contador empieza desde 0.
+
 -Column: Es el número de columna donde queremos que sea impreso nuestro caracter y puede tomar los valores según el tamaño de la pantala.
 
 
